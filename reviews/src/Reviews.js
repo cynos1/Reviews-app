@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import people from './data';
+import './reviews.css';
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
 
 const Reviews = () => {
@@ -16,6 +17,7 @@ const Reviews = () => {
         if(index === people.length - 1){
             return true
         }
+    }
   
     function handleprevdisable(){
         if(index === 0){
@@ -43,5 +45,6 @@ const Reviews = () => {
       </article>  
     )
 }
+
 
 export default Reviews;
